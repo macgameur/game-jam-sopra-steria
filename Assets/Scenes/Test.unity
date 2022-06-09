@@ -926,6 +926,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
+--- !u!1 &1660344914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660344916}
+  - component: {fileID: 1660344915}
+  m_Layer: 0
+  m_Name: AnimalsSpawner
+  m_TagString: AnimalSpawner
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1660344915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660344914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22b78f027863feb4b918358409938a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animals:
+  - {fileID: 9051112340153606241, guid: b44cd4b529369c0469270872e52eabb5, type: 3}
+  maxAnimalsNbr: 10000
+  animalsSpawnNbr: 50
+  randomNbr: 1
+  maxX: 100
+  maxZ: 100
+--- !u!4 &1660344916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660344914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 611.188, y: -295.83347, z: -134.2472}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1719687737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,7 +1238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a54d2f851cb7e46b2dec21f78c26db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goal: {fileID: 981811344}
+  animals: []
+  gestationTime: 3
 --- !u!195 &2096191286
 NavMeshAgent:
   m_ObjectHideFlags: 0

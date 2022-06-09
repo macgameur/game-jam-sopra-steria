@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 616799783}
   m_Layer: 0
   m_Name: AnimalsSpawner
-  m_TagString: Untagged
+  m_TagString: AnimalSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,6 +155,8 @@ MonoBehaviour:
   animals:
   - {fileID: 9051112340153606241, guid: b44cd4b529369c0469270872e52eabb5, type: 3}
   maxAnimalsNbr: 10000
+  animalsSpawnNbr: 50
+  randomNbr: 1
   maxX: 500
   maxZ: 500
 --- !u!4 &616799784
